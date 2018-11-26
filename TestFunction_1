@@ -23,7 +23,7 @@ for j=1:3 %loop over sample size
     % generating random sample
     X =sample_normal(sampleSize(j),sig(k),mu(s));
     
-    [a b] = ci(X,7);
+    [a b] = ci(X,1);
     Xbar = mean(X);
     
     Intervals(count,:)=[a,b,Xbar];
